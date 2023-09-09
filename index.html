@@ -72,6 +72,12 @@
         >
           Limpar
         </button>
+        <button
+          class="button-fechar-pedido"
+          @click="products.forEach(p =>{ p.active = false, p.quantity = 1})"
+        >
+          Fechar pedido
+        </button>
       </section>
     </main>
     <script src="https://unpkg.com/vue@next"></script>
